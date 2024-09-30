@@ -1,23 +1,31 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { LawyersIndex } from "./LawyersIndex";
 
 export function LawyersPage() {
-  const [lawyers, setLawyers] = useState([]);
+  const [lawyer, setLawyer] = useState(null);
 
-  const handleIndex = () => {
-    console.log("handleIndex");
-    axios.get("http://localhost:3000/lawyer.json").then((response) => {
+  const fetchLawyer = () => {
+    console.log("fetchLawyer");
+    axios.get("http://localhost:3000/lawyers/1.json").then((response) => {
       console.log(response.data);
-      setLawyers(response.data);
+      setLawyer(response.data);
     });
   };
 
-  useEffect(handleIndex, []);
+  useEffect(fetchLawyer, []);
 
   return (
     <main>
-      <LawyersIndex lawyers={lawyers} />
+      {lawyer ? (
+        <div className="lawyer-details">
+          <h1>{lawyer.name}</h1>
+          <p>Specialization: {lawyer.specialization}</p>
+          <p>Years of Experience: {lawyer.experience}</p>
+          <img src={lawyer.url} alt={`${lawyer.name}'s profile`} />
+        </div>
+      ) : (
+        <p>Loading lawyer details...</p>
+      )}
     </main>
   );
 }
