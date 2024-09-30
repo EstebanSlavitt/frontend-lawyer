@@ -1,34 +1,28 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import { LawyersPage } from "./LawyersPage";
-import { SignupPage } from "./SignupPage"; // Import from src directly
-import { LoginPage } from "./LoginPage"; // Import from src directly
+import { HomePage } from "./HomePage"; // Use HomePage for the homepage
+import { SignupPage } from "./SignupPage";
+import { LoginPage } from "./LoginPage";
+import { AboutPage } from "./AboutPage"; // Import the About page
 
 // Define routes
 const router = createBrowserRouter([
   {
     element: (
-      <div>
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <Outlet />
+        <div className="flex-grow">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     ),
     children: [
-      {
-        path: "/",
-        element: <LawyersPage />, // Main page with lawyers
-      },
-      {
-        path: "/signup",
-        element: <SignupPage />, // Sign up page
-      },
-      {
-        path: "/login",
-        element: <LoginPage />, // Login page
-      },
+      { path: "/", element: <HomePage /> }, // Updated to HomePage
+      { path: "/signup", element: <SignupPage /> },
+      { path: "/login", element: <LoginPage /> },
+      { path: "/about", element: <AboutPage /> }, // About page route
     ],
   },
 ]);
