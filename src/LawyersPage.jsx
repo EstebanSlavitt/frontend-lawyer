@@ -9,6 +9,7 @@ export function LawyersPage() {
   const [isLawyerShowVisible, setIsLawyerShowVisible] = useState(false);
   const [currentLawyer, setCurrentLawyer] = useState({});
 
+  // Fetch all lawyers
   const fetchLawyers = () => {
     console.log("fetchLawyers");
     axios.get("http://localhost:3000/lawyers.json").then((response) => {
@@ -30,6 +31,24 @@ export function LawyersPage() {
     setIsLawyerShowVisible(false);
   };
 
+  // Update the selected lawyer
+  const handleUpdate = (id, params, successCallback) => {
+    console.log("handleUpdate", params);
+    axios.patch(`http://localhost:3000/lawyers/${id}.json`, params).then((response) => {
+      setLawyers(
+        lawyers.map((lawyer) => {
+          if (lawyer.id === response.data.id) {
+            return response.data;
+          } else {
+            return lawyer;
+          }
+        })
+      );
+      successCallback(); // Reset or trigger actions after successful update
+      handleClose(); // Close the modal after the update
+    });
+  };
+
   useEffect(fetchLawyers, []);
 
   return (
@@ -37,10 +56,10 @@ export function LawyersPage() {
       <h1>All Lawyers</h1>
       <LawyersIndex lawyers={lawyers} onShow={handleShow} />
 
-      {/* Modal to display lawyer details */}
+      {/* Modal to display and update lawyer details */}
       <Modal show={isLawyerShowVisible} onClose={handleClose}>
-        {/* Use LawyersShow to display current lawyer's details */}
-        <LawyersShow lawyer={currentLawyer} />
+        {/* Use LawyersShow to display current lawyer's details and handle updates */}
+        <LawyersShow lawyer={currentLawyer} onUpdate={handleUpdate} />
       </Modal>
     </main>
   );
