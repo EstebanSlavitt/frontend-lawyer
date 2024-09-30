@@ -1,31 +1,47 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Modal } from "./Modal";
+import { LawyersShow } from "./LawyersShow"; // Import LawyersShow
+import { LawyersIndex } from "./LawyersIndex"; // Assuming you have LawyersIndex
 
 export function LawyersPage() {
-  const [lawyer, setLawyer] = useState(null);
+  const [lawyers, setLawyers] = useState([]);
+  const [isLawyerShowVisible, setIsLawyerShowVisible] = useState(false);
+  const [currentLawyer, setCurrentLawyer] = useState({});
 
-  const fetchLawyer = () => {
-    console.log("fetchLawyer");
-    axios.get("http://localhost:3000/lawyers/1.json").then((response) => {
+  const fetchLawyers = () => {
+    console.log("fetchLawyers");
+    axios.get("http://localhost:3000/lawyers.json").then((response) => {
       console.log(response.data);
-      setLawyer(response.data);
+      setLawyers(response.data);
     });
   };
 
-  useEffect(fetchLawyer, []);
+  // Show the selected lawyer in the modal
+  const handleShow = (lawyer) => {
+    console.log("handleShow", lawyer);
+    setIsLawyerShowVisible(true);
+    setCurrentLawyer(lawyer);
+  };
+
+  // Close the modal
+  const handleClose = () => {
+    console.log("handleClose");
+    setIsLawyerShowVisible(false);
+  };
+
+  useEffect(fetchLawyers, []);
 
   return (
     <main>
-      {lawyer ? (
-        <div className="lawyer-details">
-          <h1>{lawyer.name}</h1>
-          <p>Specialization: {lawyer.specialization}</p>
-          <p>Years of Experience: {lawyer.experience}</p>
-          <img src={lawyer.url} alt={`${lawyer.name}'s profile`} />
-        </div>
-      ) : (
-        <p>Loading lawyer details...</p>
-      )}
+      <h1>All Lawyers</h1>
+      <LawyersIndex lawyers={lawyers} onShow={handleShow} />
+
+      {/* Modal to display lawyer details */}
+      <Modal show={isLawyerShowVisible} onClose={handleClose}>
+        {/* Use LawyersShow to display current lawyer's details */}
+        <LawyersShow lawyer={currentLawyer} />
+      </Modal>
     </main>
   );
 }
