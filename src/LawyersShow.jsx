@@ -1,4 +1,4 @@
-export function LawyersShow({ lawyer, onUpdate }) {
+export function LawyersShow({ lawyer, onUpdate, onDestroy }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const params = new FormData(event.target); // Collect form data
@@ -29,6 +29,11 @@ export function LawyersShow({ lawyer, onUpdate }) {
         </div>
         <button type="submit">Update</button>
       </form>
+
+      {/* Destroy button to delete the lawyer */}
+      <button onClick={() => onDestroy(lawyer.id)} className="mt-4 text-red-600">
+        Destroy
+      </button>
     </div>
   );
 }

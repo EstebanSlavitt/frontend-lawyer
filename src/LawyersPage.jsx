@@ -49,6 +49,15 @@ export function LawyersPage() {
     });
   };
 
+  // Delete the selected lawyer
+  const handleDestroy = (id) => {
+    console.log("handleDestroy", id);
+    axios.delete(`http://localhost:3000/lawyers/${id}.json`).then(() => {
+      setLawyers(lawyers.filter((lawyer) => lawyer.id !== id));
+      handleClose(); // Close the modal after deleting the lawyer
+    });
+  };
+
   useEffect(fetchLawyers, []);
 
   return (
@@ -58,8 +67,8 @@ export function LawyersPage() {
 
       {/* Modal to display and update lawyer details */}
       <Modal show={isLawyerShowVisible} onClose={handleClose}>
-        {/* Use LawyersShow to display current lawyer's details and handle updates */}
-        <LawyersShow lawyer={currentLawyer} onUpdate={handleUpdate} />
+        {/* Use LawyersShow to display current lawyer's details, handle updates, and deletion */}
+        <LawyersShow lawyer={currentLawyer} onUpdate={handleUpdate} onDestroy={handleDestroy} />
       </Modal>
     </main>
   );
