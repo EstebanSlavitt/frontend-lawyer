@@ -25,9 +25,10 @@ export function Header() {
           <Link to="/about" className="text-white hover:underline mx-2">
             About
           </Link>
-          <Link to="/testimonials" className="text-white hover:underline mx-2">
-            Testimonials
-          </Link>
+          <Link to="/cases" className="text-white hover:underline mx-2">
+            Cases
+          </Link>{" "}
+          {/* Corrected path */}
         </nav>
       </div>
     </div>

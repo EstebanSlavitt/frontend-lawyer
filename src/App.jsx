@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import { HomePage } from "./HomePage"; // Use HomePage for the homepage
+import { HomePage } from "./HomePage";
 import { SignupPage } from "./SignupPage";
 import { LoginPage } from "./LoginPage";
-import { AboutPage } from "./AboutPage"; // Import the About page
-import { TestimonialsPage } from "./TestimonialsPage"; // Import the Testimonials page
+import { AboutPage } from "./AboutPage";
+import { CasesPage } from "./CasesPage"; // Correctly referencing the Cases page
 
 // Define routes
 const router = createBrowserRouter([
@@ -24,8 +24,13 @@ const router = createBrowserRouter([
       { path: "/signup", element: <SignupPage /> },
       { path: "/login", element: <LoginPage /> },
       { path: "/about", element: <AboutPage /> }, // About page
-      { path: "/testimonials", element: <TestimonialsPage /> }, // Testimonials page
+      { path: "/cases", element: <CasesPage /> }, // Cases page
     ],
+  },
+  // Optional: Add a 404 page for unmatched routes
+  {
+    path: "*",
+    element: <div>404 Not Found</div>,
   },
 ]);
 
