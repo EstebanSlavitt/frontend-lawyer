@@ -64,25 +64,9 @@ export function HomePage() {
           </h2>
           <div className="mt-6 text-lg text-gray-700 space-y-6 leading-relaxed">
             <p>
-              Over the span of 28 years as a prosecutor in Los Angeles County,
-              Steven Slavitt was promoted to the highest level as a trial
-              attorney. During his career, he prosecuted all types of criminal
-              cases, including DUI offenses, theft, drug crimes, and domestic
-              violence.
-            </p>
-            <p>
-              Steven Slavitt handled numerous high-profile cases, including
-              murder trials and child abuse cases that garnered significant
-              media attention. Since retiring as a prosecutor, he has
-              transitioned into criminal defense, providing an exceptional level
-              of service to individuals charged with crimes.
-            </p>
-            <p>
-              His extensive prosecutorial experience allows him to offer clients
-              a unique perspective—knowing what prosecutors focus on and using
-              that knowledge to build robust defense strategies. His practice
-              areas extend beyond criminal defense to include civil disputes,
-              family law, and corporate legal services.
+              Prosecutor of 30 years, and private lawyer for 10 years handling
+              criminal defense, personal injury including car accidents, slip
+              and fall, wrongful death, etc.
             </p>
           </div>
         </div>
@@ -97,7 +81,7 @@ export function HomePage() {
           </h3>
           <p className="mt-4 text-lg text-center">Steven Slavitt</p>
           <p className="text-lg text-center">
-            1391 Kapiolani Blvd., Suite 4311, Honolulu, HI 96814
+            Lilia at 2380 Kuhio Ave, Honolulu, HI 96815.
           </p>
           <p className="text-lg text-center">(808) 824-2833</p>
           <p className="text-lg text-center">Justlawyer108@gmail.com</p>
