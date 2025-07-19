@@ -20,7 +20,7 @@ export function AboutPage() {
           </p>
           <p className="mt-4 text-lg text-gray-500">Steven Slavitt</p>
           <p className="text-lg text-gray-500">
-            1391 Kapiolani Blvd., Suite 4311
+            Lilia at 2380 Kuhio Ave, Honolulu, HI 96815
           </p>
           <p className="text-lg text-gray-500">Honolulu, HI 96814</p>
           <p className="text-lg text-gray-500">(808) 824-2833</p>
