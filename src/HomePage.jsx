@@ -38,12 +38,12 @@ export function HomePage() {
 
           {/* Lawyer Info */}
           <div className="mt-6 lg:mt-0 lg:w-3/4">
-            <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900">Steven Slavitt</h1>
+            <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900">
+              Steven Slavitt
+            </h1>
             <p className="mt-4 text-lg lg:text-xl text-gray-700 leading-relaxed">
-              With over 28 years of experience as a prosecutor in Los Angeles County, Steven Slavitt has now
-              transitioned into a distinguished criminal defense attorney. His deep understanding of the legal system,
-              paired with a commitment to justice, enables him to offer unparalleled legal services across corporate,
-              civil, and criminal law.
+              Specializing in criminal defense, personal injury, landlord
+              tenant, family law
             </p>
             {/* Call to Action Button */}
             <div className="mt-6">
@@ -59,31 +59,46 @@ export function HomePage() {
 
         {/* Expanded Bio Section */}
         <div className="mt-16 bg-white bg-opacity-90 rounded-lg shadow-lg p-8">
-          <h2 className="text-3xl font-semibold text-gray-900 text-center">About Steven Slavitt</h2>
+          <h2 className="text-3xl font-semibold text-gray-900 text-center">
+            About Steven Slavitt
+          </h2>
           <div className="mt-6 text-lg text-gray-700 space-y-6 leading-relaxed">
             <p>
-              Over the span of 28 years as a prosecutor in Los Angeles County, Steven Slavitt was promoted to the
-              highest level as a trial attorney. During his career, he prosecuted all types of criminal cases, including
-              DUI offenses, theft, drug crimes, and domestic violence.
+              Over the span of 28 years as a prosecutor in Los Angeles County,
+              Steven Slavitt was promoted to the highest level as a trial
+              attorney. During his career, he prosecuted all types of criminal
+              cases, including DUI offenses, theft, drug crimes, and domestic
+              violence.
             </p>
             <p>
-              Steven Slavitt handled numerous high-profile cases, including murder trials and child abuse cases that
-              garnered significant media attention. Since retiring as a prosecutor, he has transitioned into criminal
-              defense, providing an exceptional level of service to individuals charged with crimes.
+              Steven Slavitt handled numerous high-profile cases, including
+              murder trials and child abuse cases that garnered significant
+              media attention. Since retiring as a prosecutor, he has
+              transitioned into criminal defense, providing an exceptional level
+              of service to individuals charged with crimes.
             </p>
             <p>
-              His extensive prosecutorial experience allows him to offer clients a unique perspective—knowing what
-              prosecutors focus on and using that knowledge to build robust defense strategies. His practice areas
-              extend beyond criminal defense to include civil disputes, family law, and corporate legal services.
+              His extensive prosecutorial experience allows him to offer clients
+              a unique perspective—knowing what prosecutors focus on and using
+              that knowledge to build robust defense strategies. His practice
+              areas extend beyond criminal defense to include civil disputes,
+              family law, and corporate legal services.
             </p>
           </div>
         </div>
 
         {/* Contact Information Section */}
-        <div id="contact" className="mt-16 bg-gray-900 text-white p-8 rounded-lg shadow-lg">
-          <h3 className="text-2xl font-semibold text-center">Contact Information</h3>
+        <div
+          id="contact"
+          className="mt-16 bg-gray-900 text-white p-8 rounded-lg shadow-lg"
+        >
+          <h3 className="text-2xl font-semibold text-center">
+            Contact Information
+          </h3>
           <p className="mt-4 text-lg text-center">Steven Slavitt</p>
-          <p className="text-lg text-center">1391 Kapiolani Blvd., Suite 4311, Honolulu, HI 96814</p>
+          <p className="text-lg text-center">
+            1391 Kapiolani Blvd., Suite 4311, Honolulu, HI 96814
+          </p>
           <p className="text-lg text-center">(808) 824-2833</p>
           <p className="text-lg text-center">Justlawyer108@gmail.com</p>
 
