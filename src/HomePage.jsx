@@ -42,8 +42,8 @@ export function HomePage() {
               Steven Slavitt
             </h1>
             <p className="mt-4 text-lg lg:text-xl text-gray-700 leading-relaxed">
-              Specializing in criminal defense, personal injury, landlord
-              tenant, family law
+              Steven specializes in criminal defense, personal injury,
+              landlord-tenant disputes, and family law.
             </p>
             {/* Call to Action Button */}
             <div className="mt-6">
