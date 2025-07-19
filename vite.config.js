@@ -6,4 +6,3 @@ export default defineConfig({
   base: '/frontend-lawyer/', // use your repo name here
   plugins: [react()],
 })
-
