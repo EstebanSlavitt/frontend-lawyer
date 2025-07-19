@@ -4,17 +4,24 @@ export function AboutPage() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header Section */}
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Steven Slavitt</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            About Steven Slavitt
+          </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Experienced lawyer specializing in corporate and civil law, dedicated to providing expert legal services.
+            Experienced lawyer specializing in corporate and civil law,
+            dedicated to providing expert legal services.
           </p>
         </div>
 
         {/* Contact Information */}
         <div className="mt-12 text-center">
-          <p className="text-xl font-semibold text-gray-900">Contact Information</p>
+          <p className="text-xl font-semibold text-gray-900">
+            Contact Information
+          </p>
           <p className="mt-4 text-lg text-gray-500">Steven Slavitt</p>
-          <p className="text-lg text-gray-500">1391 Kapiolani Blvd., Suite 4311</p>
+          <p className="text-lg text-gray-500">
+            1391 Kapiolani Blvd., Suite 4311
+          </p>
           <p className="text-lg text-gray-500">Honolulu, HI 96814</p>
           <p className="text-lg text-gray-500">(808) 824-2833</p>
           <p className="text-lg text-gray-500">Justlawyer108@gmail.com</p>
@@ -30,13 +37,16 @@ export function AboutPage() {
           <h3 className="text-2xl font-semibold text-gray-900">Education</h3>
           <div className="mt-4 space-y-4">
             <p className="text-lg text-gray-500">
-              <strong>J.D., 1983</strong> – University of California, Berkeley (“Boalt Hall”)
+              <strong>J.D., 1983</strong> – University of California, Berkeley
+              (“Boalt Hall”)
             </p>
             <p className="text-lg text-gray-500">
-              <strong>Masters in Psychology, 1982</strong> – University of Southern California (“USC”)
+              <strong>Masters in Psychology, 1982</strong> – University of
+              Southern California (“USC”)
             </p>
             <p className="text-lg text-gray-500">
-              <strong>Bachelor of Arts, 1979</strong> – University of California, Los Angeles (“UCLA”)
+              <strong>Bachelor of Arts, 1979</strong> – University of
+              California, Los Angeles (“UCLA”)
             </p>
           </div>
         </div>
@@ -53,32 +63,58 @@ export function AboutPage() {
           <div className="mt-4 space-y-12">
             {/* Private Practice */}
             <div>
-              <h4 className="text-xl font-semibold text-gray-800">Private Practice</h4>
-              <p className="text-lg text-gray-500">August 2017-May 2018; December 2018-present</p>
+              <h4 className="text-xl font-semibold text-gray-800">
+                Private Practice
+              </h4>
+              <p className="text-lg text-gray-500">
+                August 2017-May 2018; December 2018-present
+              </p>
               <ul className="mt-2 list-disc list-inside text-lg text-gray-500">
-                <li>Criminal defense handling various felony and misdemeanor cases.</li>
-                <li>Civil cases including divorce, child custody, business disputes, and landlord-tenant issues.</li>
+                <li>
+                  Criminal defense handling various felony and misdemeanor
+                  cases.
+                </li>
+                <li>
+                  Civil cases including divorce, child custody, business
+                  disputes, and landlord-tenant issues.
+                </li>
+                <li>civil cases including personal injury</li>
               </ul>
             </div>
 
             {/* Prosecutor’s Office Hawaii */}
             <div>
-              <h4 className="text-xl font-semibold text-gray-800">Prosecutor’s Office Hawaii</h4>
-              <p className="text-lg text-gray-500">July 2016-August 2017; June 2018-November 2018</p>
+              <h4 className="text-xl font-semibold text-gray-800">
+                Prosecutor’s Office Hawaii
+              </h4>
+              <p className="text-lg text-gray-500">
+                July 2016-August 2017; June 2018-November 2018
+              </p>
               <ul className="mt-2 list-disc list-inside text-lg text-gray-500">
-                <li>Prosecuted various felony cases and domestic violence misdemeanors.</li>
+                <li>
+                  Prosecuted various felony cases and domestic violence
+                  misdemeanors.
+                </li>
                 <li>Handled criminal appeals.</li>
               </ul>
             </div>
 
             {/* Los Angeles County District Attorney */}
             <div>
-              <h4 className="text-xl font-semibold text-gray-800">Los Angeles County District Attorney</h4>
+              <h4 className="text-xl font-semibold text-gray-800">
+                Los Angeles County District Attorney
+              </h4>
               <p className="text-lg text-gray-500">July 1987-April 2015</p>
               <ul className="mt-2 list-disc list-inside text-lg text-gray-500">
                 <li>Tried over 75 felony jury trials, including 16 murders.</li>
-                <li>Supervised and trained DDAs on trial tactics and complex case management.</li>
-                <li>Collaborated with law enforcement and social workers to build strong cases.</li>
+                <li>
+                  Supervised and trained DDAs on trial tactics and complex case
+                  management.
+                </li>
+                <li>
+                  Collaborated with law enforcement and social workers to build
+                  strong cases.
+                </li>
               </ul>
             </div>
           </div>
