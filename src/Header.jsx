@@ -14,7 +14,8 @@ export function Header() {
           Steven Slavitt, Lawyer
         </h2>
         <p className="mt-6 text-lg leading-8 text-gray-300 drop-shadow-md">
-          Providing expert legal services and dedicated to delivering justice. Specializing in corporate and civil law.
+          Specializing in criminal defense, personal injury, landlord tenant,
+          and family law”
         </p>
 
         {/* Navigation links */}
