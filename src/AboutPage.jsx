@@ -8,8 +8,8 @@ export function AboutPage() {
             About Steven Slavitt
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Experienced lawyer specializing in corporate and civil law,
-            dedicated to providing expert legal services.
+            Experienced lawyer specializing in criminal and civil law, dedicated
+            to providing expert legal services.
           </p>
         </div>
 

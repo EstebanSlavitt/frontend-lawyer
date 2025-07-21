@@ -15,7 +15,8 @@ export function Header() {
         </h2>
         <p className="mt-6 text-lg leading-8 text-gray-300 drop-shadow-md">
           Specializing in criminal defense, personal injury, landlord tenant,
-          and family law.
+          and family law. Prosecutor of 30 years and private lawyer for 10 years
+          criminal
         </p>
 
         {/* Navigation links */}
