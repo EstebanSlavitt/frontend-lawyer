@@ -38,13 +38,8 @@ export function HomePage() {
 
           {/* Lawyer Info */}
           <div className="mt-6 lg:mt-0 lg:w-3/4">
-            <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900">
-              Steven Slavitt
-            </h1>
-            <p className="mt-4 text-lg lg:text-xl text-gray-700 leading-relaxed">
-              Steven specializes in criminal defense, personal injury,
-              landlord-tenant disputes, and family law.
-            </p>
+            <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900"></h1>
+            <p className="mt-4 text-lg lg:text-xl text-gray-700 leading-relaxed"></p>
             {/* Call to Action Button */}
             <div className="mt-6">
               <a
