@@ -61,7 +61,9 @@ export function HomePage() {
             <p>
               Prosecutor of 30 years, and private lawyer for 10 years handling
               criminal defense, personal injury including car accidents, slip
-              and fall, wrongful death, etc.
+              and fall, wrongful death, etc. Further, he also does
+              landlord/tenant cases, TRO cases, divorces including child custody
+              issues, and general business disputes.
             </p>
           </div>
         </div>
