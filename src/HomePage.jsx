@@ -52,7 +52,7 @@ export function HomePage() {
           </div>
         </div>
 
-        {/* Expanded Bio Section */}
+        {/* Expanded Bio Section
         <div className="mt-16 bg-white bg-opacity-90 rounded-lg shadow-lg p-8">
           <h2 className="text-3xl font-semibold text-gray-900 text-center">
             About Steven Slavitt
@@ -66,7 +66,7 @@ export function HomePage() {
               issues, and general business disputes.
             </p>
           </div>
-        </div>
+        // </div> */}
 
         {/* Contact Information Section */}
         <div
