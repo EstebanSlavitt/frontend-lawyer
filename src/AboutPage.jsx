@@ -7,16 +7,24 @@ export function AboutPage() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             About Steven Slavitt
           </h2>
+
           <p className="mt-4 text-lg leading-8 text-gray-600">
             Experienced lawyer specializing in criminal and civil law, dedicated
-            to providing expert legal services of 40 years. Injured in
-            anAccident? We’ve Got Your Back! We specialize in helping injury
-            victims get the justice and compensation they deserve after auto
-            accidents, Uber and Lyft crashes, dog bites, and workplace injuries.
-            Whether you were a rideshare passenger, driver, or another motorist
-            affected, we know the complexities these cases bring. With years of
-            experience handling bodily injury and workers’ compensation claims,
-            we understand the challenges you face—and we’re here to make the
+            to providing expert legal services of 40 years.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Injured in an Accident? We’ve Got Your Back!
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            We specialize in helping injury victims get the justice and
+            compensation they deserve after auto accidents, Uber and Lyft
+            crashes, dog bites, and workplace injuries. Whether you were a
+            rideshare passenger, driver, or another motorist affected, we know
+            the complexities these cases bring. With years of experience
+            handling bodily injury and workers’ compensation claims, we
+            understand the challenges you face—and we’re here to make the
             process easier.
           </p>
         </div>
@@ -86,7 +94,7 @@ export function AboutPage() {
                   Civil cases including divorce, child custody, business
                   disputes, and landlord-tenant issues.
                 </li>
-                <li>civil cases including personal injury</li>
+                <li>Civil cases including personal injury</li>
               </ul>
             </div>
 
